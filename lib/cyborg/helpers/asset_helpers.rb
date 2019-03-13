@@ -33,7 +33,7 @@ module Cyborg
       end
 
       def javascript_url(*args)
-        Cyborg.plugin.javascripts.urls(args)
+        Cyborg.plugin.javascripts.urls(args).uniq
       end
 
       def asset_tags
